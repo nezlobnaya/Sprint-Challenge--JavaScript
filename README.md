@@ -30,13 +30,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+forEach() — executes a provided function once for each array element. It simply calls a provided function on each element in an array. This callback is allowed to mutate the calling array.
+map() — creates a new array with the results of calling a provided function on every element in the calling array. It utilizes return values and actually returns a new Array of the same size.
+
 2. What is the difference between a function and a method?
+
+While a method is a function that is a member of an object or class , the terms are pretty much interchangeable because in most, if not all cases, they’re identical in meaning. The key with JavaScript is the scope in which a function is executed. 
 
 3. What is closure?
 
+A closure is the combination of a function bundled together with references to its lexical environment. In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are the primary mechanism used to enable data privacy. 
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Global binding: when in the global scope, the value of 'this' will be the window object
+
+    2. Implicit binding, when an object is the context for `this` keyword.It implies that if using a method on the object
+    that the context ones wants is bound to whatever is located left of the dot operator.
+
+    3. New Binding: whenever a construction function is used the `this` refers to the specific instance of the object
+    that is created and returned by the constructor function
+
+    4. Explicit binding: whenever a Javascript methods .call(), .apply() or .bind()  are used the `this` is explicitly defined
+
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used as a “function” which calls the parent class  with the parameters passed to a child class. This is a key step to be carried out in order to instantiate a child  class.
+
+
 
 ## Project Set up
 
